@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #000000;
+    background-size: 1550px 790px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    line-height: 0.01;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-text p {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 10px;
+}
+
+p {
+    background-image: url('img_girl.jpg');
+    
+}
+
+.zoom-in-element1 {
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.flex-list {
+    display: flex;
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes default padding */
+    gap: 25px; /* Adjusts the space between items */
+    font-size: 20px; /* Example font size */
+}
+
+.zoom-in-element1 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    margin-bottom: 7px;
+    margin-left: -25px;
+}
+
+.zoom-in-element1:hover {
+    transform: scale(1.06); 
+    /* Scales the element by 1.2 times */
+}
+
+.zoom-in-element2 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.zoom-in-element2:hover {
+    transform: scale(1.06); 
+    /* Scales the element by 1.2 times */
+}
+
+.zoom-in-element3 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.zoom-in-element3:hover {
+    transform: scale(1.06); 
+    /* Scales the element by 1.2 times */
+}
+
+.zoom-in-element4 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.zoom-in-element4:hover {
+    transform: scale(1.06); 
+    /* Scales the element by 1.2 times */
+}
+
+.zoom-in-element5 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.zoom-in-element5:hover {
+    transform: scale(1.06); 
+    /* Scales the element by 1.2 times */
+}
+
+.zoom-log:hover {
+    transform: scale(1.05); 
+    /* Scales the element by 1.05 times */
+}
+
+.zoom-log {
+    transition: transform 0.3s ease;
+}
+
+.shine-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.shiny-image {
+    display: block;
+    width: 300px; /* Adjust width as needed */
+    height: 150px;
+}
+
+.shine {
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 250%;
+    height: 80%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.19) 25%, rgba(0, 0, 0, 0.223) 50%, rgba(0, 0, 0, 0.262) 75%);
+    transform: skewX(-20deg);
+    opacity: 10;
+    transition: opacity 0.3s ease;
+}
+
+.shine-wrapper:hover .shine {
+    opacity: 1;
+    animation: shine 1.5s forwards;
+}
+
+@keyframes shine {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 130%;
+    }
+}
+
+.content {
+    height: 900px; /* Ensures the content is taller than the window */
+    width: 1515px;
+    background: linear-gradient(to bottom, #060606, #000000);
+    padding: 20px;
+}
+
+.content2 {
+    height: 900px; /* Ensures the content is taller than the window */
+    width: 1515px;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    padding: 50px;
+    text-align: center;
+    color: #000000; /* Optional: ensures text is readable on the background */
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.step {
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+}
+
+.image-contain {
+    position: relative;
+    width: 500px; /* Example width */
+    height: 500px; /* Example height */
+}
+
+.back-image {
+    position: absolute;
+    top: 0;
+    left: 100;
+    width: 200%;
+    height: 100%;
+    z-index: 1; /* Background image behind */
+}
+
+
+.over-image {
+    position: absolute;
+    top: 50px; /* Adjust the position */
+    left: 50px; /* Adjust the position */
+    width: 100px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+}
+
+.fixed-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header nav ul li {
+    margin: 0 15px;
+}
+
+.fixed-header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.back1 {
+    position: absolute;
+    top: 0;
+    left: 100;
+    width: 200%;
+    height: 100%;
+    z-index: 1; /* Background image behind */
+}
+
+.moco-image {
+    position: absolute;
+    top: 50px; /* Adjust the position */
+    left: 50px; /* Adjust the position */
+    width: 100px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+
+.How-it-works {
+    position: absolute;
+    top: 50px; /* Adjust the position */
+    left: 50px; /* Adjust the position */
+    width: 100px; /* Adjust the size */
+    z-index: 3; /* Overlay image on top */
+}
+
+
+.styled-heading1 {
+    /* Move the text */
+    text-align: center; /* Center the text horizontally */
+    margin-top: -105px; /* Adjust the margin to move the text down */
+    margin-left: -350px;
+    
+    /* Change the font */
+    font-family: 'Comic Sans MS'; /* Change to any desired font */
+    
+    /* Make it bold */
+    font-weight: bold;
+    
+
+    /* Make it brighter */
+    color: #ffffff; /* Bright color (e.g., bright yellow) */
+    
+    /* Additional styling */
+    font-size: 46px; /* Change the font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to make the text stand out */
+
+    position: relative;
+    top: 25px; /* Adjust the position */
+    left: 400px; /* Adjust the position */
+    width: 1000px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+
+
+.animate-on-scroll {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-visible {
+    opacity: 1; /* Visible when in view */
+    transform: translateY(0); /* End position */
+}
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens or zoomed-in views */
+}
+
+.content3 {
+
+    height: 900px; /* Ensures the content is taller than the window */
+    width: 1515px;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+}
+
+
+.htp {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+}
+h1 {
+    
+    line-height: 2.6;
+    color: #fbfbfb;
+    position: relative;
+    top: -310px; /* Adjust the position */
+    left: -501px; /* Adjust the position */
+    width: 1200px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    font-family: 'Comic Sans MS';
+    font-size: 46px; /* Change the font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+p {
+    font-size: 22px;
+    line-height: 2.2;
+    margin-bottom: 30px;
+    color: #fbfbfb;
+    position: relative;
+    top: -220px; /* Adjust the position */
+    left: -420px; /* Adjust the position */
+    width: 1000px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+.kuku {
+    margin-top: 5px;
+    position: absolute;
+    top: 1700px; /* Adjust the position */
+    left: 1100px; /* Adjust the position */
+    width: 320px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+.more{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 2.2;
+    margin-bottom: 30px;
+    color: #ffa600;
+    position: relative;
+    top: -220px; /* Adjust the position */
+    left: -420px; /* Adjust the position */
+    width: 1000px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+
+}
+.more:hover {
+    text-decoration: underline;
+}
+
+
+.back3 {
+    margin-top: 5px;
+    position: absolute;
+    top: 1610px; /* Adjust the position */
+    left: 1px; /* Adjust the position */
+    width: 1510px; /* Adjust the size */
+    z-index: 1;
+    opacity: 0.1;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.content4 {
+
+    height: 900px; /* Ensures the content is taller than the window */
+    width: 1215px;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+}
+
+.back52 {
+    margin-top: 5px;
+    position: absolute;
+    top: 2460px; /* Adjust the position */
+    left: 10px; /* Adjust the position */
+    width: 1505px; /* Adjust the size */
+    z-index: 1;
+    opacity: 0.1;
+
+
+}
+
+.nom {
+
+    line-height: 2.6;
+    color: #fbfbfb;
+    position: relative;
+    top: -500px; /* Adjust the position */
+    left: -20px; /* Adjust the position */
+    width: 1200px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    font-family: 'Comic Sans MS';
+    font-size: 46px; /* Change the font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.puku {
+    margin-top: 5px;
+    position: absolute;
+    top: 2570px; /* Adjust the position */
+    left:-140px; /* Adjust the position */
+    width: 710px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+
+.machD {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow {
+    margin-top: 5px;
+    position: absolute;
+    top: -468px; /* Adjust the position */
+    left:170px; /* Adjust the position */
+    width: 370px;
+    height: 110px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    display: block;
+}
+
+.detail {
+
+    margin-top: 5px;
+    top: -410px; /* Adjust the position */
+    left:870px; /* Adjust the position */
+    width: 500px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+    font-family: 'Gill Sans';
+    text-align: left;
+}
+
+.machD:hover .detail {
+    transform: translate(-50%, -50%) scale(1.16); /* Zoom effect */
+}
+    
+
+
+
+.progress-container {
+    width: 80px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin: 60px 0;
+    position: relative;
+    top: -508px; /* 50 pixels from the top */
+    left: 550px;
+    z-index: 3;
+    
+}
+.progress-bar {
+    height: 7px;
+    width: 0%;
+    background-color: #0022ff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.number {
+    font-size: 11px;
+    line-height: 2.4;
+    margin-bottom: 30px;
+    color: #ffffff;
+    position: relative;
+    top: -575px; /* Adjust the position */
+    left: 80px; /* Adjust the position */
+    width: 1000px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+}
+
+.mach_name {
+    position: relative;
+    top: -460px; /* Adjust the position */
+    left: 99px; /* Adjust the position */
+    z-index: 3; /* Overlay image on top */
+    font-size: 24px;
+    font-weight: bold;
+    
+
+}
+
+.arrow2 {
+    width: 370px;
+    height: 110px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    display: block;
+    position: relative;
+    top: -205px; /* Adjust the position */
+    left:-128px; /* Adjust the position */
+    width: 370px;
+}
+
+.arrow3 {
+
+    width: 370px;
+    height: 110px; /* Adjust the size */
+    z-index: 2; /* Overlay image on top */
+    display: block;
+    position: relative;
+    top: 60px; /* Adjust the position */
+    left:-500px; /* Adjust the position */
+    width: 370px;
+}
+
+.detail2{
+    font-size: 20px;
+    line-height: 2.2;
+    color: #ffffff;
+    position: relative;
+    top: -825px; /* Adjust the position */
+    left: 860px; /* Adjust the position */
+    width: 500px; /* Adjust the size */
+    height: 20;
+    z-index: 2; /* Overlay image on top */
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: 'Gill Sans';
+
+}
+
+.detail3{
+    font-size: 20px;
+    line-height: 2.2;
+    color: #ffffff;
+    position: relative;
+    top: -655px; /* Adjust the position */
+    left: 860px; /* Adjust the position */
+    width: 500px; /* Adjust the size */
+    height: 20;
+    z-index: 2; /* Overlay image on top */
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: 'Gill Sans';
+}
+
+
+
+.imag1e-container {
+    position: relative;
+    display: inline-block; /* Ensure the container fits the image */
+}
+
+.imag1e-container img {
+    display: block; /* Remove space below the image */
+    max-width: 100%; /* Ensure image scales properly */
+}
+
+.hover-tex1t {
+    position: relative;
+    z-index: 2;
+}
+
+.imag1e-container:hover .hover-tex1t {
+    opacity: 1;
+}
+
+
+.progress-container2 {
+    width: 80px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin: 60px 0;
+    position: relative;
+    top: -694px; /* 50 pixels from the top */
+    left: 517px;
+    z-index: 3;
+    
+}
+.progress-bar2 {
+    height: 7px;
+    width: 0%;
+    background-color: #0022ff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.number3 {
+
+    position: relative;
+    top: -760px; /* Adjust the position */
+    left: 530px; /* Adjust the position */
+    width: 500px; /* Adjust the size */
+    height: 2px;
+    z-index: 3; /* Overlay image on top */
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 11px;
+    line-height: 2.4;
+  
+}
+
+
+
+.progress-container3 {
+    width: 80px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin: 60px 0;
+    position: relative;
+    top: -744px; /* 50 pixels from the top */
+    left: 517px;
+    z-index: 3;
+    
+}
+.progress-bar3 {
+    height: 7px;
+    width: 0%;
+    background-color: #0022ff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.number4 {
+
+    position: relative;
+    top: -810px; /* Adjust the position */
+    left: 530px; /* Adjust the position */
+    width: 500px; /* Adjust the size */
+    height: 2px;
+    z-index: 3; /* Overlay image on top */
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 11px;
+    line-height: 2.4;
+  
+}
+
+.mach_name2 {
+    position: relative;
+    top: -1150px; /* Adjust the position */
+    left: 500px; /* Adjust the position */
+    z-index: 3; /* Overlay image on top */
+    font-size: 24px;
+    font-weight: bold;
+    
+
+}
+
+
+.mach_name3 {
+    position: relative;
+    top: -967px; /* Adjust the position */
+    left: 500px; /* Adjust the position */
+    z-index: 3; /* Overlay image on top */
+    font-size: 24px;
+    font-weight: bold;
+    
+
+}
